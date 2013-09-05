@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>RouteLocator.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>RoutePackService</servlet-name>
+  	<servlet-class>cn.softnado.Gwt.Map.Baidu.Demos.Route.server.RoutePackServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RoutePackService</servlet-name>
+  	<url-pattern>/routelocator/RoutePackService</url-pattern>
+  </servlet-mapping>
+
+</web-app>

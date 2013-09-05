@@ -1,0 +1,56 @@
+<project name="RouteLocator Targets Configuration" basedir=".">
+	<import file="../../../Common.xml" />
+	<property name="dir.src" value="src" />
+	<property name="dir.build" value="war" />
+	<path id="Compile.classpath">
+		<fileset dir="${dir.build}/WEB-INF/lib">
+			<include name="**/*.jar" />
+			<include name="**/*.xml" />
+		</fileset>
+	</path>
+	<path id="lib.GwtCompile">
+		<path refid="lib.Gwt" />
+		<path refid="lib.BaiduMap.Client" />
+		<path refid="lib.MapResources" />
+	</path>
+
+	<target name="BuildProject" depends="CompileGWT, BuildWar, DeployWar">
+	</target>
+
+	<target name="CompileGWT" description="GWT compile to JavaScript">
+		<java failonerror="true" fork="true" classname="com.google.gwt.dev.Compiler">
+			<classpath>
+				<pathelement location="${dir.src}" />
+				<path refid="Compile.classpath" />
+				<path refid="lib.GwtCompile" />
+			</classpath>
+			<arg line="-logLevel INFO" />
+			<jvmarg value="-Xmx1024M" />
+			<arg value="cn.softnado.Gwt.Map.Baidu.Demos.Route.RouteLocator" />
+		</java>
+	</target>
+
+	<target name="BuildWar" depends="RefreshJar">
+		<delete file="${file.RouteLocator.war}" />
+		<war basedir="war" destfile="${file.RouteLocator.war}" webxml="war/WEB-INF/web.xml">
+			<exclude name="WEB-INF/**" />
+			<webinf dir="war/WEB-INF/">
+				<include name="**/*.jar" />
+				<include name="**/classes/**" />
+			</webinf>
+		</war>
+	</target>
+	<target name="DeployWar">
+		<delete file="${dir.Deployed.Root}${file.RouteLocator.war}" />
+		<copy file="${file.RouteLocator.war}" todir="${dir.Deployed.Root}" />
+	</target>
+	<target name="RefreshJar">
+		<copy todir="./war/WEB-INF/lib">
+			<path refid="lib.BaiduMap.Server" />
+			<path refid="lib.Gson" />
+			<path refid="lib.HttpComponents" />
+			<path refid="lib.CommonLogs.Required" />
+			<path refid="lib.CommonIOs.Required" />
+		</copy>
+	</target>
+</project>

@@ -1,0 +1,9 @@
+<module>
+	<inherits name='com.google.gwt.core.Core' />
+	<inherits name='com.google.gwt.dom.DOM' />
+	<inherits name='com.google.gwt.event.Event' />
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name="com.google.gwt.resources.Resources" />
+	<source path='Client' />
+	<source path='Shared' />
+</module>

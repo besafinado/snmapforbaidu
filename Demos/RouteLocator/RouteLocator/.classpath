@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/WORK/TMSSolution/trunk/Tool/BaiduMap/cn.softnado.Gwt.Map.Baidu.jar"/>
+	<classpathentry kind="lib" path="E:/WORK/TMSSolution/trunk/Tool/MapResources/cn.softnado.Gwt.Map.Resources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/GWT_SDK_2.5.1"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

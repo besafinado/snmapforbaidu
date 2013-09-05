@@ -1,0 +1,62 @@
+<project name="Common Properties">
+	<!-- Paths -->
+	<!-- Please end with / -->
+	<property name="dir.Solution.Root" value="E:/WORK/TMSSolution/branches/MPL/" />
+	<property name="dir.Deployed.Root" value="${dir.Solution.Root}Deployed/" />
+	<property name="dir.Library.Root" value="${dir.Solution.Root}Library/" />
+	<property name="dir.Tool.Root" value="${dir.Solution.Root}Tool/" />
+	<!-- Special Paths -->
+	<property name="dir.lib.GWT.Root" value="${dir.Tool.Root}GoogleGwt/GwtSdk_2.5.1/" />
+	<property name="dir.lib.MapResources.Root" value="${dir.Tool.Root}MapResources/" />
+	<property name="dir.lib.BaiduMap.Root" value="${dir.Tool.Root}BaiduMap/" />
+	<property name="dir.lib.HttpComponents.Root" value="${dir.Tool.Root}ApacheHttpComponents/httpcomponents-client-4.2.3/" />
+	<property name="dir.lib.Gson.Root" value="${dir.Tool.Root}GoogleGson/google-gson-2.2.2/" />
+	<property name="dir.lib.CommonLogs.Root" value="${dir.Tool.Root}ApacheCommons/Commons-logging-1.1.1/" />
+	<property name="dir.lib.CommonIOs.Root" value="${dir.Tool.Root}ApacheCommons/Commons-io-2.4/" />
+	<!-- Files -->
+	<property name="file.BaiduMap.Jar" value="cn.softnado.Gwt.Map.Baidu.jar" />
+	<property name="file.BaiduMap.Server.Jar" value="cn.softnado.Gwt.Map.Baidu.Server.jar" />
+	<property name="file.MapResources.Jar" value="cn.softnado.Gwt.Map.Resources.jar" />
+	<property name="file.RouteLocator.war" value="RouteLocator.war" />
+	<!-- Librarys -->
+	<path id="lib.Gwt">
+		<fileset dir="${dir.lib.GWT.Root}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<path id="lib.BaiduMap.Client">
+		<fileset dir="${dir.lib.BaiduMap.Root}">
+			<include name="**/${file.BaiduMap.Jar}" />
+		</fileset>
+	</path>
+	<path id="lib.BaiduMap.Server">
+		<fileset dir="${dir.lib.BaiduMap.Root}">
+			<include name="**/${file.BaiduMap.Server.Jar}" />
+		</fileset>
+	</path>
+	<path id="lib.HttpComponents">
+		<fileset dir="${dir.lib.HttpComponents.Root}lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<path id="lib.Gson">
+		<fileset dir="${dir.lib.Gson.Root}">
+			<include name="**/gson-2.2.2.jar" />
+		</fileset>
+	</path>
+	<path id="lib.MapResources">
+		<fileset dir="${dir.lib.MapResources.Root}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<path id="lib.CommonLogs.Required">
+		<fileset dir="${dir.lib.CommonLogs.Root}">
+			<include name="commons-logging-1.1.1.jar" />
+		</fileset>
+	</path>
+	<path id="lib.CommonIOs.Required">
+		<fileset dir="${dir.lib.CommonIOs.Root}">
+			<include name="commons-io-2.4.jar" />
+		</fileset>
+	</path>
+</project>

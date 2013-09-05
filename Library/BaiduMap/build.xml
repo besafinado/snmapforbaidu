@@ -1,0 +1,24 @@
+<project basedir="." name="BaiduMap Targets Configuration">
+	<import file="../../Common.xml" />
+	<target name="ExportJar">
+		<jar destfile="./${file.BaiduMap.Jar}">
+			<fileset dir="./src" excludes="**/cn/softnado/Gwt/Map/Baidu/Server/** **/cn/softnado/Gwt/Map/Baidu/Server/**/**.**" />
+			<fileset dir="./bin" includes="**/cn/softnado/Gwt/Map/Baidu/Client/**/**.**" />
+			<fileset dir="./bin" includes="**/cn/softnado/Gwt/Map/Baidu/Shared/**/**.**" />
+		</jar>
+		<jar destfile="./${file.BaiduMap.Server.Jar}">
+			<fileset dir="./bin" includes="**/cn/softnado/Gwt/Map/Baidu/Server/**/**.class" />
+			<fileset dir="./bin" includes="**/cn/softnado/Gwt/Map/Baidu/Shared/**/**.class" />
+		</jar>
+	</target>
+	<target name="DeleteJar">
+		<delete file="${dir.Tool.Root}/BaiduMap/${file.BaiduMap.Jar}" />
+		<delete file="./${file.BaiduMap.Jar}" />
+		<delete file="${dir.Tool.Root}/BaiduMap/${file.BaiduMap.Server.Jar}" />
+		<delete file="./${file.BaiduMap.Server.Jar}" />
+	</target>
+	<target name="DeployJar" depends="ExportJar">
+		<copy file="./${file.BaiduMap.Jar}" todir="${dir.Tool.Root}/BaiduMap" />
+		<copy file="./${file.BaiduMap.Server.Jar}" todir="${dir.Tool.Root}/BaiduMap" />
+	</target>
+</project>

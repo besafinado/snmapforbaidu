@@ -1,0 +1,2 @@
+serviceClass: cn.softnado.Gwt.Map.Baidu.Demos.Route.client.RoutePackService
+path: 57F8C63C8C6477C11D7A5FE5641F0498.gwt.rpc

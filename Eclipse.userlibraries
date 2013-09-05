@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eclipse-userlibraries version="2">
+    <library name="Apache_Http_Components_4.2.3" systemlibrary="false">
+        <archive path="$ROOT$/Tool/ApacheHttpComponents/httpcomponents-client-4.2.3/lib/commons-codec-1.6.jar"/>
+        <archive path="$ROOT$/Tool/ApacheHttpComponents/httpcomponents-client-4.2.3/lib/commons-logging-1.1.1.jar"/>
+        <archive path="$ROOT$/Tool/ApacheHttpComponents/httpcomponents-client-4.2.3/lib/fluent-hc-4.2.3.jar"/>
+        <archive path="$ROOT$/Tool/ApacheHttpComponents/httpcomponents-client-4.2.3/lib/httpclient-4.2.3.jar"/>
+        <archive path="$ROOT$/Tool/ApacheHttpComponents/httpcomponents-client-4.2.3/lib/httpclient-cache-4.2.3.jar"/>
+        <archive path="$ROOT$/Tool/ApacheHttpComponents/httpcomponents-client-4.2.3/lib/httpcore-4.2.2.jar"/>
+        <archive path="$ROOT$/Tool/ApacheHttpComponents/httpcomponents-client-4.2.3/lib/httpmime-4.2.3.jar"/>
+    </library>
+    <library name="Google_Gson_2.2.2" systemlibrary="false">
+        <archive path="$ROOT$/Tool/GoogleGson/google-gson-2.2.2/gson-2.2.2.jar"/>
+    </library>
+    <library name="GWT_SDK_2.5.1" systemlibrary="false">
+        <archive path="$ROOT$/Tool/GoogleGwt/GwtSdk_2.5.1/gwt-dev.jar"/>
+        <archive path="$ROOT$/Tool/GoogleGwt/GwtSdk_2.5.1/gwt-servlet.jar"/>
+        <archive path="$ROOT$/Tool/GoogleGwt/GwtSdk_2.5.1/gwt-user.jar"/>
+        <archive path="$ROOT$/Tool/GoogleGwt/GwtSdk_2.5.1/validation-api-1.0.0.GA.jar"/>
+        <archive path="$ROOT$/Tool/GoogleGwt/GwtSdk_2.5.1/validation-api-1.0.0.GA-sources.jar"/>
+    </library>
+</eclipse-userlibraries>

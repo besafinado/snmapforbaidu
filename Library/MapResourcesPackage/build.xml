@@ -1,0 +1,16 @@
+<project basedir="." name="MapResources Targets Configuration">
+    <import file="../../Common.xml"/>
+	<target name="ExportJar">
+		<jar destfile="./${file.MapResources.Jar}">
+			<fileset dir="./src"/>
+			<fileset dir="./bin" includes="**/**.class"/>
+		</jar>
+	</target>
+	<target name="DeleteJar">
+	    <delete file="${dir.Tool.Root}/MapResources/${file.MapResources.Jar}"/>
+		<delete file="./${file.MapResources.Jar}"/>
+	</target>
+	<target name="DeployJar" depends="ExportJar">
+		<copy file="./${file.MapResources.Jar}" todir="${dir.Tool.Root}/MapResources" />
+	</target>
+</project>
