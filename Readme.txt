@@ -1,6 +1,7 @@
 How to setup projects in Eclipse:
 
 Please make sure your Eclipse have GWT Plugin 2.5+ installed;
+Please using UTF-8 as project Encoding setting and New text file line delimiter using Unix, and please save your file in UTF-8 Without BOM mode;
 
 1, Open Common.xml, update "dir.Solution.Root" value to the folder of this Readme.txt, make sure path end with "/";
 2, Open Eclipse.userlibraries, replace all "$ROOT$" to the folder of this Readme.txt;
