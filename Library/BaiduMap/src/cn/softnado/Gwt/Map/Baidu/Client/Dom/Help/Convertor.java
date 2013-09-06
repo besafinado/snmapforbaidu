@@ -17,7 +17,7 @@ public class Convertor extends JavaScriptObject {
 		if($wnd.BMap.Convertor == null) {
 			$wnd.BMap.Convertor = {};
 		}
-		var callbackName = 'cbk_' + Math.round(Math.random() * 10000);    //随机函数名
+		var callbackName = 'cbk_' + Math.round(Math.random() * 10000);		
 		var xyUrl = "http://api.map.baidu.com/ag/coord/convert?from="
 						+ type
 						+ "&to=4&x="
@@ -27,11 +27,10 @@ public class Convertor extends JavaScriptObject {
 						+ "&callback=BMap.Convertor."
 						+ callbackName;
 	    $wnd.BMap.Convertor[callbackName] = function(xyResult){
-	        delete $wnd.BMap.Convertor[callbackName];    //调用完需要删除改函数
+	        delete $wnd.BMap.Convertor[callbackName];
 	        var pointRes = new $wnd.BMap.Point(xyResult.x, xyResult.y);
 	        callback && $entry(callback.@cn.softnado.Gwt.Map.Baidu.Client.Dom.OneParamCallback::onCallback(Ljava/lang/Object;)(pointRes));
 	    };
-		//动态创建script标签
 		@cn.softnado.Gwt.Map.Baidu.Client.Dom.Help.ScriptManager::LoadScript(Ljava/lang/String;)(xyUrl);
 	}-*/;
 
@@ -49,9 +48,9 @@ public class Convertor extends JavaScriptObject {
 		var yS = new $wnd.Array();
 		var maxCnt = 20;
 		var send = function(){
-			var callbackName = 'cbk_' + Math.round(Math.random() * 10000);    //随机函数名
-		    $wnd.BMap.Convertor[callbackName] = function(xyResults){
-		        delete $wnd.BMap.Convertor[callbackName];    //调用完需要删除改函数
+			var callbackName = 'cbk_' + Math.round(Math.random() * 10000);		    
+			$wnd.BMap.Convertor[callbackName] = function(xyResults){
+		        delete $wnd.BMap.Convertor[callbackName];
 		        var results = new $wnd.Array();
 		        var xyResult = null;
 				for(var index in xyResults) {

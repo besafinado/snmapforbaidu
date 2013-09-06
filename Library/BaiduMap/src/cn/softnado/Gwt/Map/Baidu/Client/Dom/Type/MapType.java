@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom.Type;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom.Type;
 
 import cn.softnado.Gwt.Map.Baidu.Client.Dom.Array;
 import cn.softnado.Gwt.Map.Baidu.Client.Dom.Layer.TileLayer;

@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom.Overlay;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom.Overlay;
 
 import com.google.gwt.core.client.JavaScriptObject;
 

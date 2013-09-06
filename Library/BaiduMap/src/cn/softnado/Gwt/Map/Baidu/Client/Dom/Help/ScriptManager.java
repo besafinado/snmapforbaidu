@@ -15,7 +15,7 @@ public class ScriptManager extends JavaScriptObject {
 	    var script = $doc.createElement('script');
 	    script.type = 'text/javascript';
 	    script.src = url;
-	    //借鉴了jQuery的script跨域方法
+	    //鍊熼壌浜唈Query鐨剆cript璺ㄥ煙鏂规硶
 	    script.onload = script.onreadystatechange = function(){
 	        if((!this.readyState || this.readyState === "loaded" || this.readyState === "complete")){
 	            // Handle memory leak in IE
@@ -35,7 +35,7 @@ public class ScriptManager extends JavaScriptObject {
 	    var script = $doc.createElement('script');
 	    script.type = 'text/javascript';
 	    script.src = url;
-	    //借鉴了jQuery的script跨域方法
+	    //鍊熼壌浜唈Query鐨剆cript璺ㄥ煙鏂规硶
 	    script.onload = script.onreadystatechange = function(){
 	        if((!this.readyState || this.readyState === "loaded" || this.readyState === "complete")){
 	            callback && callback.@cn.softnado.Gwt.Map.Baidu.Client.Dom.EmptyParamCallback::onCallback()();

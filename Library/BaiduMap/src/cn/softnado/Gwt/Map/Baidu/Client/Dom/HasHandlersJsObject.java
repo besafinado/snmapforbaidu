@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.event.shared.EventBus;

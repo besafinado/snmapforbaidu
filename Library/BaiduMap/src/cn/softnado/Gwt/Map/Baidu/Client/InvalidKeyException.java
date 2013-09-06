@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client;
+package cn.softnado.Gwt.Map.Baidu.Client;
 
 /**
  * App Key 不正确

@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client;
+package cn.softnado.Gwt.Map.Baidu.Client;
 
 import java.util.ArrayList;
 
@@ -17,13 +17,11 @@ import com.google.gwt.user.client.ui.Widget;
  */
 public class BaiduMap extends Widget implements HasInitedHandlers {
 	/**
-	 * 导入Baidu地图库
-	 * 
+	 * 瀵煎叆Baidu鍦板浘搴?	 * 
 	 * @param key
-	 *            如果需要使用LBS云服务，需要提供KEY
+	 *            濡傛灉闇€瑕佷娇鐢↙BS浜戞湇鍔★紝闇€瑕佹彁渚汯EY
 	 * @throws InvalidKeyException
-	 *             Key 信息不正常
-	 */
+	 *             Key 淇℃伅涓嶆甯?	 */
 	public static void ImportLibrary(String key) throws InvalidKeyException {
 		if (BaiduMap.ScriptHrefStub == null) {
 			BaiduMap.ScriptHrefStub = Document.get().createScriptElement();
@@ -36,14 +34,14 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 			BaiduMap.ScriptHrefStub.setSrc(scriptUrl);
 			BaiduMap.ScriptHrefStub.setLang("JavaScript");
 			BaiduMap.ScriptHrefStub.setAttribute("type", "text/javascript");
-			// 注册窗口级别脚本回调函数
+			// 娉ㄥ唽绐楀彛绾у埆鑴氭湰鍥炶皟鍑芥暟
 			BaiduMap.RegistGlobalMethods();
 			Document.get().getBody().appendChild(BaiduMap.ScriptHrefStub);
 		}
 	}
 
 	/**
-	 * 注册窗口级别脚本回调函数
+	 * 娉ㄥ唽绐楀彛绾у埆鑴氭湰鍥炶皟鍑芥暟
 	 */
 	private static native void RegistGlobalMethods()
 	/*-{
@@ -54,12 +52,12 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}-*/;
 
 	/**
-	 * 全局地图注册集合
+	 * 鍏ㄥ眬鍦板浘娉ㄥ唽闆嗗悎
 	 */
 	private static ArrayList<BaiduMap> BMapsList = new ArrayList<BaiduMap>();
 
 	/**
-	 * JS库加载成功后自动回调函数，请不要自行调用
+	 * JS搴撳姞杞芥垚鍔熷悗鑷姩鍥炶皟鍑芥暟锛岃涓嶈鑷璋冪敤
 	 */
 	@Deprecated
 	public static void ScriptInited() {
@@ -70,10 +68,10 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}
 
 	/**
-	 * 注册地图实例，以便在脚本加载后自动触发初始化事件
+	 * 娉ㄥ唽鍦板浘瀹炰緥锛屼互渚垮湪鑴氭湰鍔犺浇鍚庤嚜鍔ㄨЕ鍙戝垵濮嬪寲浜嬩欢
 	 * 
 	 * @param bmap
-	 *            需要注册的地图
+	 *            闇€瑕佹敞鍐岀殑鍦板浘
 	 */
 	private static void RegistMap(BaiduMap bmap) {
 		BaiduMap.BMapsList.add(bmap);
@@ -103,8 +101,7 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	Map MapStub = null;
 
 	/**
-	 * 获取百度地图JS库是否加载状态
-	 * 
+	 * 鑾峰彇鐧惧害鍦板浘JS搴撴槸鍚﹀姞杞界姸鎬?	 * 
 	 * @return
 	 */
 	public static boolean IsBaiduMapLibraryInited() {
@@ -112,19 +109,18 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}
 
 	/**
-	 * 创建新地图
-	 */
+	 * 鍒涘缓鏂板湴鍥?	 */
 	public BaiduMap() {
 		this(Document.get().createDivElement(), "bmap-BMap");
 	}
 
 	/**
-	 * 创建新的百度地图组件
+	 * 鍒涘缓鏂扮殑鐧惧害鍦板浘缁勪欢
 	 * 
 	 * @param mapDivElement
-	 *            目标初始化DIV
+	 *            鐩爣鍒濆鍖朌IV
 	 * @param styleName
-	 *            目标层样式名
+	 *            鐩爣灞傛牱寮忓悕
 	 */
 	public BaiduMap(DivElement mapDivElement, String styleName) {
 		this.setElement(mapDivElement);
@@ -142,17 +138,16 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}
 
 	/**
-	 * 创建新百度地图组件
-	 * 
+	 * 鍒涘缓鏂扮櫨搴﹀湴鍥剧粍浠?	 * 
 	 * @param mapDivElement
-	 *            目标DIV
+	 *            鐩爣DIV
 	 */
 	public BaiduMap(DivElement mapDivElement) {
 		this(mapDivElement, "bdmap-Map");
 	}
 
 	/**
-	 * 获取内部Map对象
+	 * 鑾峰彇鍐呴儴Map瀵硅薄
 	 * 
 	 * @return
 	 */
@@ -161,7 +156,7 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}
 
 	/**
-	 * 是否初始化了
+	 * 鏄惁鍒濆鍖栦簡
 	 * 
 	 * @return
 	 */

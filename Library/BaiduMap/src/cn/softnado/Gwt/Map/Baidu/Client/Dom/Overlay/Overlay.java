@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom.Overlay;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom.Overlay;
 
 import cn.softnado.Gwt.Map.Baidu.Client.Dom.HasHandlersJsObject;
 import cn.softnado.Gwt.Map.Baidu.Client.Dom.Core.Map;

@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom.Layer;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom.Layer;
 
 import cn.softnado.Gwt.Map.Baidu.Client.Dom.Control.Copyright;
 

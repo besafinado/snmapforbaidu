@@ -6,7 +6,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 
 public class RoutePoint implements Serializable, IsSerializable {
 	/**
-	 * 序列化处理ID
+	 * 搴忓垪鍖栧鐞咺D
 	 */
 	private static final long serialVersionUID = -181591273341927850L;
 	private double _lat;

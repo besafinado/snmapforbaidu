@@ -8,7 +8,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 public class RoutePack implements Serializable, IsSerializable {
 
 	/**
-	 * 序列化ID
+	 * 搴忓垪鍖朓D
 	 */
 	private static final long serialVersionUID = 6913827862259325814L;
 	private ArrayList<RoutePoint> _markers;

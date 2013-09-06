@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Baidu Map Javascript API
  */
 /**

@@ -3,8 +3,7 @@ package cn.softnado.Gwt.Map.Baidu.Client.Dom.Control;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
- * 此常量用于描述对象当前状态。
- * 
+ * 姝ゅ父閲忕敤浜庢弿杩板璞″綋鍓嶇姸鎬併€? * 
  * @author softnado
  * 
  */
@@ -14,7 +13,7 @@ public class StatusCode extends JavaScriptObject {
 	}
 
 	/**
-	 * 没有权限。对应数值“6”。(自 1.1 新增)
+	 * 娌℃湁鏉冮檺銆傚搴旀暟鍊尖€?鈥濄€?鑷?1.1 鏂板)
 	 * 
 	 * @return
 	 */
@@ -24,7 +23,7 @@ public class StatusCode extends JavaScriptObject {
 	}-*/;
 
 	/**
-	 * 服务不可用。对应数值“7”。(自 1.1 新增)
+	 * 鏈嶅姟涓嶅彲鐢ㄣ€傚搴旀暟鍊尖€?鈥濄€?鑷?1.1 鏂板)
 	 * 
 	 * @return
 	 */
@@ -34,7 +33,7 @@ public class StatusCode extends JavaScriptObject {
 	}-*/;
 
 	/**
-	 * 超时。对应数值“8”。(自 1.1 新增)
+	 * 瓒呮椂銆傚搴旀暟鍊尖€?鈥濄€?鑷?1.1 鏂板)
 	 * 
 	 * @return
 	 */

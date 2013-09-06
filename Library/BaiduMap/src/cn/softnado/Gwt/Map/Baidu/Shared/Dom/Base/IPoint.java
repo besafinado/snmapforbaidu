@@ -2,29 +2,25 @@ package cn.softnado.Gwt.Map.Baidu.Shared.Dom.Base;
 
 public interface IPoint {
 	/**
-	 * 地理经度。
-	 * 
+	 * 鍦扮悊缁忓害銆?	 * 
 	 * @return
 	 */
 	double getLng();
 
 	/**
-	 * 地理经度。
-	 * 
+	 * 鍦扮悊缁忓害銆?	 * 
 	 * @param value
 	 */
 	void setLng(double value);
 
 	/**
-	 * 地理纬度。
-	 * 
+	 * 鍦扮悊绾害銆?	 * 
 	 * @return
 	 */
 	double getLat();
 
 	/**
-	 * 地理纬度。
-	 * 
+	 * 鍦扮悊绾害銆?	 * 
 	 * @param value
 	 */
 	void setLat(double value);

@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client;
+package cn.softnado.Gwt.Map.Baidu.Client;
 
 import cn.softnado.Gwt.Map.Baidu.Client.Dom.Core.Map;
 

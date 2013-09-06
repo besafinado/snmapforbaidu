@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom.Control;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom.Control;
 
 import cn.softnado.Gwt.Map.Baidu.Client.Dom.Array;
 

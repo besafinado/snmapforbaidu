@@ -1,2 +1,3 @@
 # Module routelocator
 # RPC service class, partial path of RPC policy file
+cn.softnado.Gwt.Map.Baidu.Demos.Route.client.RoutePackService, 57F8C63C8C6477C11D7A5FE5641F0498.gwt.rpc

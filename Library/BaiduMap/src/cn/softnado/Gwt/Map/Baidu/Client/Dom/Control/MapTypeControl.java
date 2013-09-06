@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom.Control;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom.Control;
 
 /**
  * 此类是负责切换地图类型的控件，此类继承Control所有功能。

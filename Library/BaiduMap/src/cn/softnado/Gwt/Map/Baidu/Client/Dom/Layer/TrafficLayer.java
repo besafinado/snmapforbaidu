@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom.Layer;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom.Layer;
 
 public class TrafficLayer extends TileLayer {
 	protected TrafficLayer() {

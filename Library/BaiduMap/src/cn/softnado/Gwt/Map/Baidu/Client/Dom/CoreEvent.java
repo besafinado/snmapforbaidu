@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom;
 
 import java.util.HashMap;
 import java.util.Map;

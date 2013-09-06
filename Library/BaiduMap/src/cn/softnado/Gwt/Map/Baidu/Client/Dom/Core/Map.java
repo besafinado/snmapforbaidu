@@ -29,8 +29,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 构造函数
-	 */
+	 * 鏋勯€犲嚱鏁?	 */
 
 	public static native Map CreateInstance(String divId)
 	/*-{
@@ -54,75 +53,66 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 配置方法
+	 * 閰嶇疆鏂规硶
 	 **/
 	/**
-	 * 启用地图拖拽，默认启用。
-	 */
+	 * 鍚敤鍦板浘鎷栨嫿锛岄粯璁ゅ惎鐢ㄣ€?	 */
 	public final native void EnableDragging()
 	/*-{
 		this.enableDragging();
 	}-*/;
 
 	/**
-	 * 禁用地图拖拽。
-	 */
+	 * 绂佺敤鍦板浘鎷栨嫿銆?	 */
 	public final native void DisableDragging()
 	/*-{
 		this.disableDragging();
 	}-*/;
 
 	/**
-	 * 启用滚轮放大缩小，默认禁用。
-	 */
+	 * 鍚敤婊氳疆鏀惧ぇ缂╁皬锛岄粯璁ょ鐢ㄣ€?	 */
 	public final native void EnableScrollWheelZoom()
 	/*-{
 		this.enableScrollWheelZoom();
 	}-*/;
 
 	/**
-	 * 禁用滚轮放大缩小。
-	 */
+	 * 绂佺敤婊氳疆鏀惧ぇ缂╁皬銆?	 */
 	public final native void DisableScrollWheelZoom()
 	/*-{
 		this.disableScrollWheelZoom();
 	}-*/;
 
 	/**
-	 * 启用双击放大，默认启用。
-	 */
+	 * 鍚敤鍙屽嚮鏀惧ぇ锛岄粯璁ゅ惎鐢ㄣ€?	 */
 	public final native void EnableDoubleClickZoom()
 	/*-{
 		this.enableDoubleClickZoom();
 	}-*/;
 
 	/**
-	 * 禁用双击放大。
-	 */
+	 * 绂佺敤鍙屽嚮鏀惧ぇ銆?	 */
 	public final native void DisableDoubleClickZoom()
 	/*-{
 		this.disableDoubleClickZoom();
 	}-*/;
 
 	/**
-	 * 启用键盘操作，默认禁用。键盘的上、下、左、右键可连续移动地图。同时按下其中两个键可使地图进行对角移动。PgUp、PgDn、
-	 * Home和End键会使地图平移其1/2的大小。+、-键会使地图放大或缩小一级。
-	 */
+	 * 鍚敤閿洏鎿嶄綔锛岄粯璁ょ鐢ㄣ€傞敭鐩樼殑涓娿€佷笅銆佸乏銆佸彸閿彲杩炵画绉诲姩鍦板浘銆傚悓鏃舵寜涓嬪叾涓袱涓敭鍙娇鍦板浘杩涜瀵硅绉诲姩銆侾gUp銆丳gDn銆?	 * Home鍜孍nd閿細浣垮湴鍥惧钩绉诲叾1/2鐨勫ぇ灏忋€?銆?閿細浣垮湴鍥炬斁澶ф垨缂╁皬涓€绾с€?	 */
 	public final native void EnableKeyboard()
 	/*-{
 		this.enableKeyboard();
 	}-*/;
 
 	/**
-	 * 禁用键盘操作。
-	 */
+	 * 绂佺敤閿洏鎿嶄綔銆?	 */
 	public final native void DisableKeyboard()
 	/*-{
 		this.disableKeyboard();
 	}-*/;
 
 	/**
-	 * 启用地图惯性拖拽，默认禁用。(自 1.1 新增)
+	 * 鍚敤鍦板浘鎯€ф嫋鎷斤紝榛樿绂佺敤銆?鑷?1.1 鏂板)
 	 */
 	public final native void EnableInertialDragging()
 	/*-{
@@ -130,7 +120,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 禁用地图惯性拖拽。(自 1.1 新增)
+	 * 绂佺敤鍦板浘鎯€ф嫋鎷姐€?鑷?1.1 鏂板)
 	 */
 	public final native void DisableInertialDragging()
 	/*-{
@@ -138,7 +128,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 启用连续缩放效果，默认禁用。(自 1.1 新增)
+	 * 鍚敤杩炵画缂╂斁鏁堟灉锛岄粯璁ょ鐢ㄣ€?鑷?1.1 鏂板)
 	 */
 	public final native void EnableContinuousZoom()
 	/*-{
@@ -146,7 +136,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 禁用连续缩放效果。(自 1.1 新增)
+	 * 绂佺敤杩炵画缂╂斁鏁堟灉銆?鑷?1.1 鏂板)
 	 */
 	public final native void DisableContinuousZoom()
 	/*-{
@@ -154,7 +144,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 启用双指操作缩放，默认启用。(自 1.1 新增)
+	 * 鍚敤鍙屾寚鎿嶄綔缂╂斁锛岄粯璁ゅ惎鐢ㄣ€?鑷?1.1 鏂板)
 	 */
 	public final native void EnablePinchToZoom()
 	/*-{
@@ -162,7 +152,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 禁用双指操作缩放。(自 1.1 新增)
+	 * 绂佺敤鍙屾寚鎿嶄綔缂╂斁銆?鑷?1.1 鏂板)
 	 */
 	public final native void DisablePinchToZoom()
 	/*-{
@@ -170,7 +160,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 启用自动适应容器尺寸变化，默认启用。(自 1.2 新增)
+	 * 鍚敤鑷姩閫傚簲瀹瑰櫒灏哄鍙樺寲锛岄粯璁ゅ惎鐢ㄣ€?鑷?1.2 鏂板)
 	 */
 	public final native void EnableAutoResize()
 	/*-{
@@ -178,7 +168,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 禁用自动适应容器尺寸变化。(自 1.2 新增)
+	 * 绂佺敤鑷姩閫傚簲瀹瑰櫒灏哄鍙樺寲銆?鑷?1.2 鏂板)
 	 */
 	public final native void DisableAutoResize()
 	/*-{
@@ -186,10 +176,10 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 设置地图默认的鼠标指针样式。参数cursor应符合CSS的cursor属性规范。(自 1.1 新增)
+	 * 璁剧疆鍦板浘榛樿鐨勯紶鏍囨寚閽堟牱寮忋€傚弬鏁癱ursor搴旂鍚圕SS鐨刢ursor灞炴€ц鑼冦€?鑷?1.1 鏂板)
 	 * 
 	 * @param cursor
-	 *            鼠标指针样式
+	 *            榧犳爣鎸囬拡鏍峰紡
 	 */
 	public final native void setDefaultCursor(String cursor)
 	/*-{
@@ -197,7 +187,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 返回地图默认的鼠标指针样式。(自 1.1 新增)
+	 * 杩斿洖鍦板浘榛樿鐨勯紶鏍囨寚閽堟牱寮忋€?鑷?1.1 鏂板)
 	 */
 	public final native String getDefaultCursor()
 	/*-{
@@ -205,10 +195,10 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 设置拖拽地图时的鼠标指针样式。参数cursor应符合CSS的cursor属性规范。(自 1.1 新增)
+	 * 璁剧疆鎷栨嫿鍦板浘鏃剁殑榧犳爣鎸囬拡鏍峰紡銆傚弬鏁癱ursor搴旂鍚圕SS鐨刢ursor灞炴€ц鑼冦€?鑷?1.1 鏂板)
 	 * 
 	 * @param cursor
-	 *            鼠标指针样式
+	 *            榧犳爣鎸囬拡鏍峰紡
 	 */
 	public final native void setDraggingCursor(String cursor)
 	/*-{
@@ -216,7 +206,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 返回拖拽地图时的鼠标指针样式。(自 1.1 新增)
+	 * 杩斿洖鎷栨嫿鍦板浘鏃剁殑榧犳爣鎸囬拡鏍峰紡銆?鑷?1.1 鏂板)
 	 */
 	public final native String getDraggingCursor()
 	/*-{
@@ -224,10 +214,10 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 设置地图允许的最小级别。取值不得小于地图类型所允许的最小级别。(自 1.2 新增)
+	 * 璁剧疆鍦板浘鍏佽鐨勬渶灏忕骇鍒€傚彇鍊间笉寰楀皬浜庡湴鍥剧被鍨嬫墍鍏佽鐨勬渶灏忕骇鍒€?鑷?1.2 鏂板)
 	 * 
 	 * @param zoom
-	 *            级别
+	 *            绾у埆
 	 */
 	public final native void setMinZoom(double zoom)
 	/*-{
@@ -235,10 +225,10 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 设置地图允许的最大级别。取值不得大于地图类型所允许的最大级别。(自 1.2 新增)
+	 * 璁剧疆鍦板浘鍏佽鐨勬渶澶х骇鍒€傚彇鍊间笉寰楀ぇ浜庡湴鍥剧被鍨嬫墍鍏佽鐨勬渶澶х骇鍒€?鑷?1.2 鏂板)
 	 * 
 	 * @param zoom
-	 *            级别
+	 *            绾у埆
 	 */
 	public final native void setMaxZoom(double zoom)
 	/*-{
@@ -246,12 +236,10 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 地图状态方法
-	 */
+	 * 鍦板浘鐘舵€佹柟娉?	 */
 	/**
-	 * 返回地图可视区域，以地理坐标表示。
-	 * 
-	 * @return 地图可视区域
+	 * 杩斿洖鍦板浘鍙鍖哄煙锛屼互鍦扮悊鍧愭爣琛ㄧず銆?	 * 
+	 * @return 鍦板浘鍙鍖哄煙
 	 */
 	public final native Bounds getBounds()
 	/*-{
@@ -259,29 +247,26 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 返回地图当前中心点。
-	 * 
-	 * @return 中心点
-	 */
+	 * 杩斿洖鍦板浘褰撳墠涓績鐐广€?	 * 
+	 * @return 涓績鐐?	 */
 	public final native Point getCenter()
 	/*-{
 		return this.getCenter();
 	}-*/;
 
 	/**
-	 * 返回两点之间的距离，单位是米。(自 1.1 新增)
+	 * 杩斿洖涓ょ偣涔嬮棿鐨勮窛绂伙紝鍗曚綅鏄背銆?鑷?1.1 鏂板)
 	 * 
 	 * @param start
 	 * @param end
-	 * @return 距离，单位是米
-	 */
+	 * @return 璺濈锛屽崟浣嶆槸绫?	 */
 	public final native double getDistance(Point start, Point end)
 	/*-{
 		return this.getDistance(start,end);
 	}-*/;
 
 	/**
-	 * 返回地图类型。(自 1.1 新增)
+	 * 杩斿洖鍦板浘绫诲瀷銆?鑷?1.1 鏂板)
 	 * 
 	 * @return
 	 */
@@ -291,9 +276,8 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 返回地图视图的大小，以像素表示。
-	 * 
-	 * @return 大小，以像素表示
+	 * 杩斿洖鍦板浘瑙嗗浘鐨勫ぇ灏忥紝浠ュ儚绱犺〃绀恒€?	 * 
+	 * @return 澶у皬锛屼互鍍忕礌琛ㄧず
 	 */
 	public final native Size getSize()
 	/*-{
@@ -301,8 +285,8 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 根据提供的地理区域或坐标获得最佳的地图视野，返回的对象中包含center和zoom属性，分别表示地图的中心点和级别。此方法仅返回视野信息，
-	 * 不会将新的中心点和级别做用到当前地图上。(自 1.1 新增)
+	 * 鏍规嵁鎻愪緵鐨勫湴鐞嗗尯鍩熸垨鍧愭爣鑾峰緱鏈€浣崇殑鍦板浘瑙嗛噹锛岃繑鍥炵殑瀵硅薄涓寘鍚玞enter鍜寊oom灞炴€э紝鍒嗗埆琛ㄧず鍦板浘鐨勪腑蹇冪偣鍜岀骇鍒€傛鏂规硶浠呰繑鍥炶閲庝俊鎭紝
+	 * 涓嶄細灏嗘柊鐨勪腑蹇冪偣鍜岀骇鍒仛鐢ㄥ埌褰撳墠鍦板浘涓娿€?鑷?1.1 鏂板)
 	 * 
 	 * @param points
 	 * @return
@@ -313,8 +297,8 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 根据提供的地理区域或坐标获得最佳的地图视野，返回的对象中包含center和zoom属性，分别表示地图的中心点和级别。此方法仅返回视野信息，
-	 * 不会将新的中心点和级别做用到当前地图上。(自 1.1 新增)
+	 * 鏍规嵁鎻愪緵鐨勫湴鐞嗗尯鍩熸垨鍧愭爣鑾峰緱鏈€浣崇殑鍦板浘瑙嗛噹锛岃繑鍥炵殑瀵硅薄涓寘鍚玞enter鍜寊oom灞炴€э紝鍒嗗埆琛ㄧず鍦板浘鐨勪腑蹇冪偣鍜岀骇鍒€傛鏂规硶浠呰繑鍥炶閲庝俊鎭紝
+	 * 涓嶄細灏嗘柊鐨勪腑蹇冪偣鍜岀骇鍒仛鐢ㄥ埌褰撳墠鍦板浘涓娿€?鑷?1.1 鏂板)
 	 * 
 	 * @param points
 	 * @param viewportOptions
@@ -327,8 +311,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 返回地图当前缩放级别。
-	 * 
+	 * 杩斿洖鍦板浘褰撳墠缂╂斁绾у埆銆?	 * 
 	 * @return
 	 */
 	public final native double getZoom()
@@ -337,47 +320,37 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 修改地图状态方法
-	 **/
+	 * 淇敼鍦板浘鐘舵€佹柟娉?	 **/
 	/**
-	 * 设初始化地图。
-	 * 如果center类型为Point时，zoom必须赋值，范围3-19级，若调用高清底图（针对移动端开发）时，zoom可赋值范围为3-18
-	 * 级。如果center类型为字符串时，比如“北京”，zoom可以忽略，地图将自动根据center适配最佳zoom级别。
-	 */
+	 * 璁惧垵濮嬪寲鍦板浘銆?	 * 濡傛灉center绫诲瀷涓篜oint鏃讹紝zoom蹇呴』璧嬪€硷紝鑼冨洿3-19绾э紝鑻ヨ皟鐢ㄩ珮娓呭簳鍥撅紙閽堝绉诲姩绔紑鍙戯級鏃讹紝zoom鍙祴鍊艰寖鍥翠负3-18
+	 * 绾с€傚鏋渃enter绫诲瀷涓哄瓧绗︿覆鏃讹紝姣斿鈥滃寳浜€濓紝zoom鍙互蹇界暐锛屽湴鍥惧皢鑷姩鏍规嵁center閫傞厤鏈€浣硓oom绾у埆銆?	 */
 	public final native void CenterAndZoom(Point center, double zoom)
 	/*-{
 		this.centerAndZoom(center,zoom);
 	}-*/;
 
 	/**
-	 * 修改地图状态方法
-	 **/
+	 * 淇敼鍦板浘鐘舵€佹柟娉?	 **/
 	/**
-	 * 设初始化地图。
-	 * 如果center类型为Point时，zoom必须赋值，范围3-19级，若调用高清底图（针对移动端开发）时，zoom可赋值范围为3-18
-	 * 级。如果center类型为字符串时，比如“北京”，zoom可以忽略，地图将自动根据center适配最佳zoom级别。
-	 */
+	 * 璁惧垵濮嬪寲鍦板浘銆?	 * 濡傛灉center绫诲瀷涓篜oint鏃讹紝zoom蹇呴』璧嬪€硷紝鑼冨洿3-19绾э紝鑻ヨ皟鐢ㄩ珮娓呭簳鍥撅紙閽堝绉诲姩绔紑鍙戯級鏃讹紝zoom鍙祴鍊艰寖鍥翠负3-18
+	 * 绾с€傚鏋渃enter绫诲瀷涓哄瓧绗︿覆鏃讹紝姣斿鈥滃寳浜€濓紝zoom鍙互蹇界暐锛屽湴鍥惧皢鑷姩鏍规嵁center閫傞厤鏈€浣硓oom绾у埆銆?	 */
 	public final native void CenterAndZoom(String center, double zoom)
 	/*-{
 		this.centerAndZoom(center,zoom);
 	}-*/;
 
 	/**
-	 * 修改地图状态方法
-	 **/
+	 * 淇敼鍦板浘鐘舵€佹柟娉?	 **/
 	/**
-	 * 设初始化地图。
-	 * 如果center类型为Point时，zoom必须赋值，范围3-19级，若调用高清底图（针对移动端开发）时，zoom可赋值范围为3-18
-	 * 级。如果center类型为字符串时，比如“北京”，zoom可以忽略，地图将自动根据center适配最佳zoom级别。
-	 */
+	 * 璁惧垵濮嬪寲鍦板浘銆?	 * 濡傛灉center绫诲瀷涓篜oint鏃讹紝zoom蹇呴』璧嬪€硷紝鑼冨洿3-19绾э紝鑻ヨ皟鐢ㄩ珮娓呭簳鍥撅紙閽堝绉诲姩绔紑鍙戯級鏃讹紝zoom鍙祴鍊艰寖鍥翠负3-18
+	 * 绾с€傚鏋渃enter绫诲瀷涓哄瓧绗︿覆鏃讹紝姣斿鈥滃寳浜€濓紝zoom鍙互蹇界暐锛屽湴鍥惧皢鑷姩鏍规嵁center閫傞厤鏈€浣硓oom绾у埆銆?	 */
 	public final native void CenterAndZoom(String center)
 	/*-{
 		this.centerAndZoom(center);
 	}-*/;
 
 	/**
-	 * 将地图的中心点更改为给定的点。如果该点在当前的地图视图中已经可见，则会以平滑动画的方式移动到中心点位置。可以通过配置强制移动过程不使用动画效果。
-	 * 
+	 * 灏嗗湴鍥剧殑涓績鐐规洿鏀逛负缁欏畾鐨勭偣銆傚鏋滆鐐瑰湪褰撳墠鐨勫湴鍥捐鍥句腑宸茬粡鍙锛屽垯浼氫互骞虫粦鍔ㄧ敾鐨勬柟寮忕Щ鍔ㄥ埌涓績鐐逛綅缃€傚彲浠ラ€氳繃閰嶇疆寮哄埗绉诲姩杩囩▼涓嶄娇鐢ㄥ姩鐢绘晥鏋溿€?	 * 
 	 * @param center
 	 */
 	public final native void PanTo(Point center)
@@ -386,8 +359,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 将地图的中心点更改为给定的点。如果该点在当前的地图视图中已经可见，则会以平滑动画的方式移动到中心点位置。可以通过配置强制移动过程不使用动画效果。
-	 * 
+	 * 灏嗗湴鍥剧殑涓績鐐规洿鏀逛负缁欏畾鐨勭偣銆傚鏋滆鐐瑰湪褰撳墠鐨勫湴鍥捐鍥句腑宸茬粡鍙锛屽垯浼氫互骞虫粦鍔ㄧ敾鐨勬柟寮忕Щ鍔ㄥ埌涓績鐐逛綅缃€傚彲浠ラ€氳繃閰嶇疆寮哄埗绉诲姩杩囩▼涓嶄娇鐢ㄥ姩鐢绘晥鏋溿€?	 * 
 	 * @param center
 	 * @param opts
 	 */
@@ -397,8 +369,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 将地图在水平位置上移动x像素，垂直位置上移动y像素。如果指定的像素大于可视区域范围或者在配置中指定没有动画效果，则不执行滑动效果。
-	 * 
+	 * 灏嗗湴鍥惧湪姘村钩浣嶇疆涓婄Щ鍔▁鍍忕礌锛屽瀭鐩翠綅缃笂绉诲姩y鍍忕礌銆傚鏋滄寚瀹氱殑鍍忕礌澶т簬鍙鍖哄煙鑼冨洿鎴栬€呭湪閰嶇疆涓寚瀹氭病鏈夊姩鐢绘晥鏋滐紝鍒欎笉鎵ц婊戝姩鏁堟灉銆?	 * 
 	 * @param x
 	 * @param y
 	 * @param opts
@@ -409,16 +380,14 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 重新设置地图，恢复地图初始化时的中心点和级别。
-	 */
+	 * 閲嶆柊璁剧疆鍦板浘锛屾仮澶嶅湴鍥惧垵濮嬪寲鏃剁殑涓績鐐瑰拰绾у埆銆?	 */
 	public final native void Reset()
 	/*-{
 		this.reset();
 	}-*/;
 
 	/**
-	 * 设置地图中心点。center除了可以为坐标点以外，还支持城市名。注：使用城市名进行设置时该方法是异步执行，使用坐标点设置时该方法不是异步执行。
-	 * 
+	 * 璁剧疆鍦板浘涓績鐐广€俢enter闄や簡鍙互涓哄潗鏍囩偣浠ュ锛岃繕鏀寔鍩庡競鍚嶃€傛敞锛氫娇鐢ㄥ煄甯傚悕杩涜璁剧疆鏃惰鏂规硶鏄紓姝ユ墽琛岋紝浣跨敤鍧愭爣鐐硅缃椂璇ユ柟娉曚笉鏄紓姝ユ墽琛屻€?	 * 
 	 * @param center
 	 */
 	public final native void setCenter(Point center)
@@ -427,13 +396,11 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 设置地图城市，注意当地图初始化时的类型设置为BMAP_PERSPECTIVE_MAP时，
-	 * 需要在调用centerAndZoom之前调用此方法设置地图所在城市。例如： var map = new BMap.Map(“container”,
-	 * {mapType: BMAP_PERSPECTIVE_MAP}); map.setCurrentCity(“北京市”);
+	 * 璁剧疆鍦板浘鍩庡競锛屾敞鎰忓綋鍦板浘鍒濆鍖栨椂鐨勭被鍨嬭缃负BMAP_PERSPECTIVE_MAP鏃讹紝
+	 * 闇€瑕佸湪璋冪敤centerAndZoom涔嬪墠璋冪敤姝ゆ柟娉曡缃湴鍥炬墍鍦ㄥ煄甯傘€備緥濡傦細 var map = new BMap.Map(鈥渃ontainer鈥?
+	 * {mapType: BMAP_PERSPECTIVE_MAP}); map.setCurrentCity(鈥滃寳浜競鈥?;
 	 * map.centerAndZoom(new BMap.Point(116.404, 39.915), 18);
-	 * 注意：初始化的坐标应与您设置的城市对应
-	 * ，否则地图将无法正常显示。如果地图初始化为BMAP_NORMAL_MAP类型，则在调用setMapType切换地图类型时也要调用此方法。 (自
-	 * 1.1 新增)
+	 * 娉ㄦ剰锛氬垵濮嬪寲鐨勫潗鏍囧簲涓庢偍璁剧疆鐨勫煄甯傚搴?	 * 锛屽惁鍒欏湴鍥惧皢鏃犳硶姝ｅ父鏄剧ず銆傚鏋滃湴鍥惧垵濮嬪寲涓築MAP_NORMAL_MAP绫诲瀷锛屽垯鍦ㄨ皟鐢╯etMapType鍒囨崲鍦板浘绫诲瀷鏃朵篃瑕佽皟鐢ㄦ鏂规硶銆?(鑷?	 * 1.1 鏂板)
 	 */
 	public final native void setCurrentCity(String city)
 	/*-{
@@ -441,8 +408,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 设置地图类型。注意，当设置地图类型为BMAP_PERSPECTIVE_MAP时，需要调用map.setCurrentCity方法设置城市。(自
-	 * 1.1 新增)
+	 * 璁剧疆鍦板浘绫诲瀷銆傛敞鎰忥紝褰撹缃湴鍥剧被鍨嬩负BMAP_PERSPECTIVE_MAP鏃讹紝闇€瑕佽皟鐢╩ap.setCurrentCity鏂规硶璁剧疆鍩庡競銆?鑷?	 * 1.1 鏂板)
 	 */
 	public final native void setMapType(MapType mapType)
 	/*-{
@@ -450,7 +416,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 根据提供的坐标点数组、地理区域或视野对象设置地图视野，调整后的视野会保证包含提供的坐标点或地理区域。(自 1.1 新增)
+	 * 鏍规嵁鎻愪緵鐨勫潗鏍囩偣鏁扮粍銆佸湴鐞嗗尯鍩熸垨瑙嗛噹瀵硅薄璁剧疆鍦板浘瑙嗛噹锛岃皟鏁村悗鐨勮閲庝細淇濊瘉鍖呭惈鎻愪緵鐨勫潗鏍囩偣鎴栧湴鐞嗗尯鍩熴€?鑷?1.1 鏂板)
 	 * 
 	 * @param view
 	 */
@@ -460,7 +426,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 根据提供的坐标点数组、地理区域或视野对象设置地图视野，调整后的视野会保证包含提供的坐标点或地理区域。(自 1.1 新增)
+	 * 鏍规嵁鎻愪緵鐨勫潗鏍囩偣鏁扮粍銆佸湴鐞嗗尯鍩熸垨瑙嗛噹瀵硅薄璁剧疆鍦板浘瑙嗛噹锛岃皟鏁村悗鐨勮閲庝細淇濊瘉鍖呭惈鎻愪緵鐨勫潗鏍囩偣鎴栧湴鐞嗗尯鍩熴€?鑷?1.1 鏂板)
 	 * 
 	 * @param view
 	 * @param viewportOptions
@@ -472,7 +438,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 根据提供的坐标点数组、地理区域或视野对象设置地图视野，调整后的视野会保证包含提供的坐标点或地理区域。(自 1.1 新增)
+	 * 鏍规嵁鎻愪緵鐨勫潗鏍囩偣鏁扮粍銆佸湴鐞嗗尯鍩熸垨瑙嗛噹瀵硅薄璁剧疆鍦板浘瑙嗛噹锛岃皟鏁村悗鐨勮閲庝細淇濊瘉鍖呭惈鎻愪緵鐨勫潗鏍囩偣鎴栧湴鐞嗗尯鍩熴€?鑷?1.1 鏂板)
 	 * 
 	 * @param view
 	 */
@@ -482,7 +448,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 根据提供的坐标点数组、地理区域或视野对象设置地图视野，调整后的视野会保证包含提供的坐标点或地理区域。(自 1.1 新增)
+	 * 鏍规嵁鎻愪緵鐨勫潗鏍囩偣鏁扮粍銆佸湴鐞嗗尯鍩熸垨瑙嗛噹瀵硅薄璁剧疆鍦板浘瑙嗛噹锛岃皟鏁村悗鐨勮閲庝細淇濊瘉鍖呭惈鎻愪緵鐨勫潗鏍囩偣鎴栧湴鐞嗗尯鍩熴€?鑷?1.1 鏂板)
 	 * 
 	 * @param view
 	 * @param viewportOptions
@@ -494,7 +460,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 根据提供的坐标点数组、地理区域或视野对象设置地图视野，调整后的视野会保证包含提供的坐标点或地理区域。(自 1.1 新增)
+	 * 鏍规嵁鎻愪緵鐨勫潗鏍囩偣鏁扮粍銆佸湴鐞嗗尯鍩熸垨瑙嗛噹瀵硅薄璁剧疆鍦板浘瑙嗛噹锛岃皟鏁村悗鐨勮閲庝細淇濊瘉鍖呭惈鎻愪緵鐨勫潗鏍囩偣鎴栧湴鐞嗗尯鍩熴€?鑷?1.1 鏂板)
 	 * 
 	 * @param view
 	 */
@@ -504,7 +470,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 根据提供的坐标点数组、地理区域或视野对象设置地图视野，调整后的视野会保证包含提供的坐标点或地理区域。(自 1.1 新增)
+	 * 鏍规嵁鎻愪緵鐨勫潗鏍囩偣鏁扮粍銆佸湴鐞嗗尯鍩熸垨瑙嗛噹瀵硅薄璁剧疆鍦板浘瑙嗛噹锛岃皟鏁村悗鐨勮閲庝細淇濊瘉鍖呭惈鎻愪緵鐨勫潗鏍囩偣鎴栧湴鐞嗗尯鍩熴€?鑷?1.1 鏂板)
 	 * 
 	 * @param view
 	 * @param viewportOptions
@@ -516,7 +482,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 将视图切换到指定的缩放等级，中心点坐标不变。注意：当有信息窗口在地图上打开时，地图缩放将保证信息窗口所在的坐标位置不动。(自 1.2 废弃)
+	 * 灏嗚鍥惧垏鎹㈠埌鎸囧畾鐨勭缉鏀剧瓑绾э紝涓績鐐瑰潗鏍囦笉鍙樸€傛敞鎰忥細褰撴湁淇℃伅绐楀彛鍦ㄥ湴鍥句笂鎵撳紑鏃讹紝鍦板浘缂╂斁灏嗕繚璇佷俊鎭獥鍙ｆ墍鍦ㄧ殑鍧愭爣浣嶇疆涓嶅姩銆?鑷?1.2 搴熷純)
 	 * 
 	 * @param zoom
 	 */
@@ -526,7 +492,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 将视图切换到指定的缩放等级，中心点坐标不变。注意：当有信息窗口在地图上打开时，地图缩放将保证信息窗口所在的坐标位置不动。(自 1.2 新增)
+	 * 灏嗚鍥惧垏鎹㈠埌鎸囧畾鐨勭缉鏀剧瓑绾э紝涓績鐐瑰潗鏍囦笉鍙樸€傛敞鎰忥細褰撴湁淇℃伅绐楀彛鍦ㄥ湴鍥句笂鎵撳紑鏃讹紝鍦板浘缂╂斁灏嗕繚璇佷俊鎭獥鍙ｆ墍鍦ㄧ殑鍧愭爣浣嶇疆涓嶅姩銆?鑷?1.2 鏂板)
 	 */
 	public final native void setZoom(double zoom)
 	/*-{
@@ -534,8 +500,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 是否使用高分辨率底图。仅当mapOptions.enableHighResolution属性为true且设备支持高分辨率时返回true。
-	 * 
+	 * 鏄惁浣跨敤楂樺垎杈ㄧ巼搴曞浘銆備粎褰搈apOptions.enableHighResolution灞炴€т负true涓旇澶囨敮鎸侀珮鍒嗚鲸鐜囨椂杩斿洖true銆?	 * 
 	 * @return
 	 */
 	public final native boolean HighResolutionEnabled()
@@ -544,23 +509,21 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 放大一级视图。
-	 */
+	 * 鏀惧ぇ涓€绾ц鍥俱€?	 */
 	public final native void ZoomIn()
 	/*-{
 		this.zoomIn();
 	}-*/;
 
 	/**
-	 * 缩小一级视图。
-	 */
+	 * 缂╁皬涓€绾ц鍥俱€?	 */
 	public final native void ZoomOut()
 	/*-{
 		this.zoomOut();
 	}-*/;
 
 	/**
-	 * 为地图添加热区。(自 1.2 新增)
+	 * 涓哄湴鍥炬坊鍔犵儹鍖恒€?鑷?1.2 鏂板)
 	 * 
 	 * @param hotspot
 	 */
@@ -570,7 +533,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 移除某个地图热区。(自 1.2 新增)
+	 * 绉婚櫎鏌愪釜鍦板浘鐑尯銆?鑷?1.2 鏂板)
 	 * 
 	 * @param hotspot
 	 */
@@ -580,7 +543,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 清空地图所有热区。(自 1.2 新增)
+	 * 娓呯┖鍦板浘鎵€鏈夌儹鍖恒€?鑷?1.2 鏂板)
 	 */
 	public final native void ClearHotspots()
 	/*-{
@@ -588,9 +551,8 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 通知地图容器尺寸发生变化。默认情况下地图会自动检测容器尺寸是否发生变化并重新加载图块，
-	 * 如果修改了MapOptions的enableAutoResize为false
-	 * ，或者调用了Map的disableAutoResize()方法，那么需要调用此方法来通知地图。(自 1.2 新增)
+	 * 閫氱煡鍦板浘瀹瑰櫒灏哄鍙戠敓鍙樺寲銆傞粯璁ゆ儏鍐典笅鍦板浘浼氳嚜鍔ㄦ娴嬪鍣ㄥ昂瀵告槸鍚﹀彂鐢熷彉鍖栧苟閲嶆柊鍔犺浇鍥惧潡锛?	 * 濡傛灉淇敼浜哅apOptions鐨別nableAutoResize涓篺alse
+	 * 锛屾垨鑰呰皟鐢ㄤ簡Map鐨刣isableAutoResize()鏂规硶锛岄偅涔堥渶瑕佽皟鐢ㄦ鏂规硶鏉ラ€氱煡鍦板浘銆?鑷?1.2 鏂板)
 	 */
 	public final native void CheckResize()
 	/*-{
@@ -598,11 +560,10 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 控件方法
+	 * 鎺т欢鏂规硶
 	 */
 	/**
-	 * 将控件添加到地图，一个控件实例只能向地图中添加一次。
-	 * 
+	 * 灏嗘帶浠舵坊鍔犲埌鍦板浘锛屼竴涓帶浠跺疄渚嬪彧鑳藉悜鍦板浘涓坊鍔犱竴娆°€?	 * 
 	 * @param control
 	 */
 	public final native void AddControl(Control control)
@@ -611,8 +572,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 从地图中移除控件。如果控件从未被添加到地图中，则该移除不起任何作用。
-	 * 
+	 * 浠庡湴鍥句腑绉婚櫎鎺т欢銆傚鏋滄帶浠朵粠鏈娣诲姞鍒板湴鍥句腑锛屽垯璇ョЩ闄や笉璧蜂换浣曚綔鐢ㄣ€?	 * 
 	 * @param control
 	 */
 	public final native void RemoveControl(Control control)
@@ -621,9 +581,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 返回地图的容器元素。当创建用户自定义控件时，需要自行实现Control.initialize()方法，并将控件的容器元素添加到地图上，
-	 * 通过此方法可获得地图容器。
-	 * 
+	 * 杩斿洖鍦板浘鐨勫鍣ㄥ厓绱犮€傚綋鍒涘缓鐢ㄦ埛鑷畾涔夋帶浠舵椂锛岄渶瑕佽嚜琛屽疄鐜癈ontrol.initialize()鏂规硶锛屽苟灏嗘帶浠剁殑瀹瑰櫒鍏冪礌娣诲姞鍒板湴鍥句笂锛?	 * 閫氳繃姝ゆ柟娉曞彲鑾峰緱鍦板浘瀹瑰櫒銆?	 * 
 	 * @return
 	 */
 	public final native DivElement getContainer()
@@ -632,11 +590,10 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 右键菜单方法
+	 * 鍙抽敭鑿滃崟鏂规硶
 	 */
 	/**
-	 * 添加右键菜单。
-	 * 
+	 * 娣诲姞鍙抽敭鑿滃崟銆?	 * 
 	 * @param menu
 	 */
 	public final native void AddContextMenu(ContextMenu menu)
@@ -645,8 +602,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 移除右键菜单。
-	 * 
+	 * 绉婚櫎鍙抽敭鑿滃崟銆?	 * 
 	 * @param menu
 	 */
 	public final native void RemoveContextMenu(ContextMenu menu)
@@ -655,11 +611,9 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 覆盖物方法
-	 */
+	 * 瑕嗙洊鐗╂柟娉?	 */
 	/**
-	 * 将覆盖物添加到地图中，一个覆盖物实例只能向地图中添加一次。
-	 * 
+	 * 灏嗚鐩栫墿娣诲姞鍒板湴鍥句腑锛屼竴涓鐩栫墿瀹炰緥鍙兘鍚戝湴鍥句腑娣诲姞涓€娆°€?	 * 
 	 * @param overlay
 	 */
 	public final native void AddOverlay(Overlay overlay)
@@ -668,8 +622,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 从地图中移除覆盖物。如果覆盖物从未被添加到地图中，则该移除不起任何作用。
-	 * 
+	 * 浠庡湴鍥句腑绉婚櫎瑕嗙洊鐗┿€傚鏋滆鐩栫墿浠庢湭琚坊鍔犲埌鍦板浘涓紝鍒欒绉婚櫎涓嶈捣浠讳綍浣滅敤銆?	 * 
 	 * @param overlay
 	 */
 	public final native void RemoveOverlay(Overlay overlay)
@@ -678,16 +631,14 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 清除地图上所有覆盖物。
-	 */
+	 * 娓呴櫎鍦板浘涓婃墍鏈夎鐩栫墿銆?	 */
 	public final native void ClearOverlays()
 	/*-{
 		this.clearOverlays();
 	}-*/;
 
 	/**
-	 * 在地图上打开信息窗口。
-	 * 
+	 * 鍦ㄥ湴鍥句笂鎵撳紑淇℃伅绐楀彛銆?	 * 
 	 * @param infoWnd
 	 * @param point
 	 */
@@ -697,15 +648,14 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 关闭在地图上打开的信息窗口。在标注上打开的信息窗口也可通过此方法进行关闭。
-	 */
+	 * 鍏抽棴鍦ㄥ湴鍥句笂鎵撳紑鐨勪俊鎭獥鍙ｃ€傚湪鏍囨敞涓婃墦寮€鐨勪俊鎭獥鍙ｄ篃鍙€氳繃姝ゆ柟娉曡繘琛屽叧闂€?	 */
 	public final native void CloseInfoWindow()
 	/*-{
 		this.closeInfoWindow();
 	}-*/;
 
 	/**
-	 * 根据地理坐标获取对应的覆盖物容器的坐标，此方法用于自定义覆盖物。(自 1.1 新增)
+	 * 鏍规嵁鍦扮悊鍧愭爣鑾峰彇瀵瑰簲鐨勮鐩栫墿瀹瑰櫒鐨勫潗鏍囷紝姝ゆ柟娉曠敤浜庤嚜瀹氫箟瑕嗙洊鐗┿€?鑷?1.1 鏂板)
 	 * 
 	 * @param point
 	 * @return
@@ -716,7 +666,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 根据覆盖物容器的坐标获取对应的地理坐标。(自 1.1 新增)
+	 * 鏍规嵁瑕嗙洊鐗╁鍣ㄧ殑鍧愭爣鑾峰彇瀵瑰簲鐨勫湴鐞嗗潗鏍囥€?鑷?1.1 鏂板)
 	 * 
 	 * @param pixel
 	 * @return
@@ -727,7 +677,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 返回地图上处于打开状态的信息窗的实例。当地图没有打开的信息窗口时，此方法返回null。(自 1.1 新增)
+	 * 杩斿洖鍦板浘涓婂浜庢墦寮€鐘舵€佺殑淇℃伅绐楃殑瀹炰緥銆傚綋鍦板浘娌℃湁鎵撳紑鐨勪俊鎭獥鍙ｆ椂锛屾鏂规硶杩斿洖null銆?鑷?1.1 鏂板)
 	 * 
 	 * @return
 	 */
@@ -737,7 +687,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 返回地图上的所有覆盖物。(自 1.1 新增)
+	 * 杩斿洖鍦板浘涓婄殑鎵€鏈夎鐩栫墿銆?鑷?1.1 鏂板)
 	 * 
 	 * @return
 	 */
@@ -747,7 +697,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 返回地图覆盖物容器列表。(自 1.1 新增)
+	 * 杩斿洖鍦板浘瑕嗙洊鐗╁鍣ㄥ垪琛ㄣ€?鑷?1.1 鏂板)
 	 * 
 	 * @return
 	 */
@@ -757,11 +707,10 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 地图图层方法
+	 * 鍦板浘鍥惧眰鏂规硶
 	 */
 	/**
-	 * 添加一个自定义地图图层。
-	 * 
+	 * 娣诲姞涓€涓嚜瀹氫箟鍦板浘鍥惧眰銆?	 * 
 	 * @param tileLayer
 	 */
 	public final native void AddTileLayer(TileLayer tileLayer)
@@ -770,8 +719,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 移除一个自定义地图图层。
-	 * 
+	 * 绉婚櫎涓€涓嚜瀹氫箟鍦板浘鍥惧眰銆?	 * 
 	 * @param tilelayer
 	 */
 	public final native void RemoveTileLayer(TileLayer tilelayer)
@@ -780,11 +728,10 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 坐标变换
+	 * 鍧愭爣鍙樻崲
 	 */
 	/**
-	 * 像素坐标转换为经纬度坐标。
-	 * 
+	 * 鍍忕礌鍧愭爣杞崲涓虹粡绾害鍧愭爣銆?	 * 
 	 * @param pixel
 	 */
 	public final native Point PixelToPoint(Pixel pixel)
@@ -793,8 +740,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 经纬度坐标转换为像素坐标。
-	 * 
+	 * 缁忕含搴﹀潗鏍囪浆鎹负鍍忕礌鍧愭爣銆?	 * 
 	 * @param point
 	 */
 	public final native Pixel PointToPixel(Point point)
@@ -803,11 +749,11 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 事件机制
+	 * 浜嬩欢鏈哄埗
 	 */
 
 	/**
-	 * 在JS级别注册事件
+	 * 鍦↗S绾у埆娉ㄥ唽浜嬩欢
 	 */
 	public final native void RegistOriginEvents()
 	/*-{
@@ -835,7 +781,7 @@ public class Map extends HasHandlersJsObject {
 	}-*/;
 
 	/**
-	 * 触发单击事件
+	 * 瑙﹀彂鍗曞嚮浜嬩欢
 	 * 
 	 * @param map
 	 * @param args
@@ -847,7 +793,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 添加单击事件处理
+	 * 娣诲姞鍗曞嚮浜嬩欢澶勭悊
 	 * 
 	 * @param handler
 	 * @return
@@ -860,7 +806,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 触发双击事件
+	 * 瑙﹀彂鍙屽嚮浜嬩欢
 	 * 
 	 * @param map
 	 * @param args
@@ -872,7 +818,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 添加双击事件处理
+	 * 娣诲姞鍙屽嚮浜嬩欢澶勭悊
 	 * 
 	 * @param handler
 	 * @return
@@ -885,7 +831,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 触发右键单击
+	 * 瑙﹀彂鍙抽敭鍗曞嚮
 	 * 
 	 * @param map
 	 * @param args
@@ -897,7 +843,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 添加右键单击处理
+	 * 娣诲姞鍙抽敭鍗曞嚮澶勭悊
 	 * 
 	 * @param handler
 	 * @return
@@ -910,7 +856,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 触发右键双击
+	 * 瑙﹀彂鍙抽敭鍙屽嚮
 	 * 
 	 * @param map
 	 * @param args
@@ -922,7 +868,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 添加右键双击处理
+	 * 娣诲姞鍙抽敭鍙屽嚮澶勭悊
 	 * 
 	 * @param handler
 	 * @return
@@ -935,7 +881,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 触发地图类型更改
+	 * 瑙﹀彂鍦板浘绫诲瀷鏇存敼
 	 * 
 	 * @param map
 	 * @param args
@@ -945,7 +891,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 添加地图类型更改处理
+	 * 娣诲姞鍦板浘绫诲瀷鏇存敼澶勭悊
 	 * 
 	 * @param handler
 	 * @return
@@ -957,7 +903,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 触发鼠标移动事件
+	 * 瑙﹀彂榧犳爣绉诲姩浜嬩欢
 	 * 
 	 * @param map
 	 * @param args
@@ -969,7 +915,7 @@ public class Map extends HasHandlersJsObject {
 	}
 
 	/**
-	 * 添加鼠标移动事件处理
+	 * 娣诲姞榧犳爣绉诲姩浜嬩欢澶勭悊
 	 * 
 	 * @param handler
 	 * @return

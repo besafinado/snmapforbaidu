@@ -8,7 +8,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 public class RoutePath implements Serializable, IsSerializable {
 
 	/**
-	 * 序列化ID
+	 * 搴忓垪鍖朓D
 	 */
 	private static final long serialVersionUID = 7511491025270761396L;
 

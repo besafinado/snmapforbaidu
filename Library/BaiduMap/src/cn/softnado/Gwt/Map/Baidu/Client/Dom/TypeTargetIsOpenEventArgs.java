@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom;
 
 public class TypeTargetIsOpenEventArgs extends TypeTargetEventArgs {
 	protected TypeTargetIsOpenEventArgs() {

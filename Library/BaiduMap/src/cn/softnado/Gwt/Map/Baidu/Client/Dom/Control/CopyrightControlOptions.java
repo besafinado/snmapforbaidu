@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom.Control;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom.Control;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import cn.softnado.Gwt.Map.Baidu.Client.Dom.Base.Size;

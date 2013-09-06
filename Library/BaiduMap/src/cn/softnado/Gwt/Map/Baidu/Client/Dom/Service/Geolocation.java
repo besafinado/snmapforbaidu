@@ -1,4 +1,4 @@
-﻿package cn.softnado.Gwt.Map.Baidu.Client.Dom.Service;
+package cn.softnado.Gwt.Map.Baidu.Client.Dom.Service;
 
 import cn.softnado.Gwt.Map.Baidu.Client.Dom.OneParamCallback;
 
