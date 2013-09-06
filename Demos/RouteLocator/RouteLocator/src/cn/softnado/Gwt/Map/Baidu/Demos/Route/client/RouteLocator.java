@@ -282,7 +282,7 @@ public class RouteLocator implements EntryPoint {
 		@Override
 		public void onInited(InitedEvent event) {
 			Map map = event.getBaiduMapStub().getMap();
-			map.CenterAndZoom("涓婃捣");
+			map.CenterAndZoom("上海");
 			map.EnableAutoResize();
 			map.EnableScrollWheelZoom();
 			map.DisableDoubleClickZoom();
