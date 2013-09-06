@@ -1,7 +1,7 @@
 <project name="Common Properties">
 	<!-- Paths -->
 	<!-- Please end with / -->
-	<property name="dir.Solution.Root" value="E:/WORK/TMSSolution/branches/MPL/" />
+	<property name="dir.Solution.Root" value="$ROOT$" />
 	<property name="dir.Deployed.Root" value="${dir.Solution.Root}Deployed/" />
 	<property name="dir.Library.Root" value="${dir.Solution.Root}Library/" />
 	<property name="dir.Tool.Root" value="${dir.Solution.Root}Tool/" />
