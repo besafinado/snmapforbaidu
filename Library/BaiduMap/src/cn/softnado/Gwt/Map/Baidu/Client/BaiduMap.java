@@ -17,11 +17,13 @@ import com.google.gwt.user.client.ui.Widget;
  */
 public class BaiduMap extends Widget implements HasInitedHandlers {
 	/**
-	 * 瀵煎叆Baidu鍦板浘搴?	 * 
+	 * Import Baidu Map Library
+	 * 
 	 * @param key
-	 *            濡傛灉闇€瑕佷娇鐢↙BS浜戞湇鍔★紝闇€瑕佹彁渚汯EY
+	 *            Please provide Key
 	 * @throws InvalidKeyException
-	 *             Key 淇℃伅涓嶆甯?	 */
+	 *             Key value incorrect
+	 */
 	public static void ImportLibrary(String key) throws InvalidKeyException {
 		if (BaiduMap.ScriptHrefStub == null) {
 			BaiduMap.ScriptHrefStub = Document.get().createScriptElement();
@@ -34,14 +36,14 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 			BaiduMap.ScriptHrefStub.setSrc(scriptUrl);
 			BaiduMap.ScriptHrefStub.setLang("JavaScript");
 			BaiduMap.ScriptHrefStub.setAttribute("type", "text/javascript");
-			// 娉ㄥ唽绐楀彛绾у埆鑴氭湰鍥炶皟鍑芥暟
+			// Regist winow level call back method
 			BaiduMap.RegistGlobalMethods();
 			Document.get().getBody().appendChild(BaiduMap.ScriptHrefStub);
 		}
 	}
 
 	/**
-	 * 娉ㄥ唽绐楀彛绾у埆鑴氭湰鍥炶皟鍑芥暟
+	 * Window level callback method
 	 */
 	private static native void RegistGlobalMethods()
 	/*-{
@@ -52,12 +54,12 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}-*/;
 
 	/**
-	 * 鍏ㄥ眬鍦板浘娉ㄥ唽闆嗗悎
+	 * Global Map Registry
 	 */
 	private static ArrayList<BaiduMap> BMapsList = new ArrayList<BaiduMap>();
 
 	/**
-	 * JS搴撳姞杞芥垚鍔熷悗鑷姩鍥炶皟鍑芥暟锛岃涓嶈鑷璋冪敤
+	 * JS Library success load callback method, please do not call it by your self
 	 */
 	@Deprecated
 	public static void ScriptInited() {
@@ -68,10 +70,10 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}
 
 	/**
-	 * 娉ㄥ唽鍦板浘瀹炰緥锛屼互渚垮湪鑴氭湰鍔犺浇鍚庤嚜鍔ㄨЕ鍙戝垵濮嬪寲浜嬩欢
+	 * Regist Map instance
 	 * 
 	 * @param bmap
-	 *            闇€瑕佹敞鍐岀殑鍦板浘
+	 *            Map to regist
 	 */
 	private static void RegistMap(BaiduMap bmap) {
 		BaiduMap.BMapsList.add(bmap);
@@ -101,7 +103,8 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	Map MapStub = null;
 
 	/**
-	 * 鑾峰彇鐧惧害鍦板浘JS搴撴槸鍚﹀姞杞界姸鎬?	 * 
+	 * Get the status of Baidu Map Library
+	 * 
 	 * @return
 	 */
 	public static boolean IsBaiduMapLibraryInited() {
@@ -109,18 +112,19 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}
 
 	/**
-	 * 鍒涘缓鏂板湴鍥?	 */
+	 * Create new Map
+	 */
 	public BaiduMap() {
 		this(Document.get().createDivElement(), "bmap-BMap");
 	}
 
 	/**
-	 * 鍒涘缓鏂扮殑鐧惧害鍦板浘缁勪欢
+	 * Create new Map widget
 	 * 
 	 * @param mapDivElement
-	 *            鐩爣鍒濆鍖朌IV
+	 *            Target Div
 	 * @param styleName
-	 *            鐩爣灞傛牱寮忓悕
+	 *            Target Div Style Name
 	 */
 	public BaiduMap(DivElement mapDivElement, String styleName) {
 		this.setElement(mapDivElement);
@@ -138,16 +142,17 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}
 
 	/**
-	 * 鍒涘缓鏂扮櫨搴﹀湴鍥剧粍浠?	 * 
+	 * Create new Map widget
+	 * 
 	 * @param mapDivElement
-	 *            鐩爣DIV
+	 *            Target Div
 	 */
 	public BaiduMap(DivElement mapDivElement) {
 		this(mapDivElement, "bdmap-Map");
 	}
 
 	/**
-	 * 鑾峰彇鍐呴儴Map瀵硅薄
+	 * Internal Baidu Map Instance
 	 * 
 	 * @return
 	 */
@@ -156,7 +161,7 @@ public class BaiduMap extends Widget implements HasInitedHandlers {
 	}
 
 	/**
-	 * 鏄惁鍒濆鍖栦簡
+	 * Check if Map inited
 	 * 
 	 * @return
 	 */

@@ -1,7 +1,7 @@
 package cn.softnado.Gwt.Map.Baidu.Client;
 
 /**
- * App Key 不正确
+ * App Key Incorrect
  * @author softnado
  *
  */
